@@ -1,0 +1,3 @@
+include LICENSE
+graft pallets_sphinx_themes
+global-exclude *.py[co]
