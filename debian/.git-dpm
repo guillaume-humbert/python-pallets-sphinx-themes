@@ -6,3 +6,6 @@
 python-pallets-sphinx-themes_1.0.1.orig.tar.gz
 22859dd9ea969b5e86e80d7210154e11da40f551
 12323
+debianTag="debian/%e%v"
+patchedTag="patched/%e%v"
+upstreamTag="upstream/%e%u"
