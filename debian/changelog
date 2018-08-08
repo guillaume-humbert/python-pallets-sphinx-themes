@@ -1,3 +1,9 @@
+python-pallets-sphinx-themes (1.0.1-2) UNRELEASED; urgency=medium
+
+  * Convert git repository from git-dpm to gbp layout
+
+ -- Ondřej Nový <onovy@debian.org>  Wed, 08 Aug 2018 09:07:32 +0200
+
 python-pallets-sphinx-themes (1.0.1-1) unstable; urgency=medium
 
   * Initial release. (Closes: #898628)
