@@ -1,33 +1,53 @@
-From f61d49e62610c8a5b8f5dadaf341a0205fca6736 Mon Sep 17 00:00:00 2001
-From: =?UTF-8?q?Ond=C5=99ej=20Nov=C3=BD?= <onovy@debian.org>
+From: =?utf-8?b?T25kxZllaiBOb3bDvQ==?= <onovy@debian.org>
 Date: Mon, 14 May 2018 14:59:33 +0200
 Subject: Prevent privacy breach
 
 ---
- pallets_sphinx_themes/flask-sqlalchemy/sidebarintro.html | 3 +--
- pallets_sphinx_themes/pocoo/carbon_ads.html              | 5 -----
- 2 files changed, 1 insertion(+), 7 deletions(-)
+ src/pallets_sphinx_themes/themes/babel/static/babel.css     | 2 --
+ src/pallets_sphinx_themes/themes/click/static/click.css     | 2 --
+ src/pallets_sphinx_themes/themes/jinja/static/jinja.css     | 1 -
+ src/pallets_sphinx_themes/themes/platter/static/platter.css | 1 -
+ 4 files changed, 6 deletions(-)
 
-diff --git a/pallets_sphinx_themes/flask-sqlalchemy/sidebarintro.html b/pallets_sphinx_themes/flask-sqlalchemy/sidebarintro.html
-index d37ad8b..980a5b7 100644
---- a/pallets_sphinx_themes/flask-sqlalchemy/sidebarintro.html
-+++ b/pallets_sphinx_themes/flask-sqlalchemy/sidebarintro.html
-@@ -10,5 +10,4 @@
-   <li><a href="http://github.com/mitsuhiko/flask-sqlalchemy/issues">Issue Tracker</a></li>
- </ul>
+diff --git a/src/pallets_sphinx_themes/themes/babel/static/babel.css b/src/pallets_sphinx_themes/themes/babel/static/babel.css
+index 6841512..5bbeed3 100644
+--- a/src/pallets_sphinx_themes/themes/babel/static/babel.css
++++ b/src/pallets_sphinx_themes/themes/babel/static/babel.css
+@@ -1,6 +1,4 @@
+ @import url(pocoo.css);
+-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
+-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
  
--<a href="http://github.com/mitsuhiko/flask-sqlalchemy"><img style="position: fixed; top: 0; right: 0; border: 0;"
--   src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-+<a href="http://github.com/mitsuhiko/flask-sqlalchemy">Fork me on GitHub</a>
-diff --git a/pallets_sphinx_themes/pocoo/carbon_ads.html b/pallets_sphinx_themes/pocoo/carbon_ads.html
-index de75225..66f9667 100644
---- a/pallets_sphinx_themes/pocoo/carbon_ads.html
-+++ b/pallets_sphinx_themes/pocoo/carbon_ads.html
-@@ -1,7 +1,2 @@
- {%- if carbon_ads_args %}
--  <div class="carbon_ads">
--    <script async
--      src="//cdn.carbonads.com/carbon.js?{{ carbon_ads_args }}"
--      id="_carbonads_js"></script>
--  </div>
- {% endif -%}
+ /* fonts */
+ body                        { font-family: 'Ubuntu Mono', 'Consolas', 'Menlo',
+diff --git a/src/pallets_sphinx_themes/themes/click/static/click.css b/src/pallets_sphinx_themes/themes/click/static/click.css
+index adff8b6..1378e53 100644
+--- a/src/pallets_sphinx_themes/themes/click/static/click.css
++++ b/src/pallets_sphinx_themes/themes/click/static/click.css
+@@ -1,6 +1,4 @@
+ @import url("pocoo.css");
+-@import url("http://fonts.googleapis.com/css?family=Ubuntu+Mono");
+-@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+ 
+ body, pre, code {
+   font-family: "Ubuntu Mono", "Consolas", "Menlo", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+diff --git a/src/pallets_sphinx_themes/themes/jinja/static/jinja.css b/src/pallets_sphinx_themes/themes/jinja/static/jinja.css
+index 83de6a1..f6d65a0 100644
+--- a/src/pallets_sphinx_themes/themes/jinja/static/jinja.css
++++ b/src/pallets_sphinx_themes/themes/jinja/static/jinja.css
+@@ -1,5 +1,4 @@
+ @import url("pocoo.css");
+-@import url("https://fonts.googleapis.com/css?family=Crimson+Text");
+ 
+ h1, h2, h3, h4, h5, h6, p.admonition-title, div.sphinxsidebar input {
+   font-family: "Crimson Text", "Garamond", "Georgia", serif;
+diff --git a/src/pallets_sphinx_themes/themes/platter/static/platter.css b/src/pallets_sphinx_themes/themes/platter/static/platter.css
+index 270cc08..36bd6c0 100644
+--- a/src/pallets_sphinx_themes/themes/platter/static/platter.css
++++ b/src/pallets_sphinx_themes/themes/platter/static/platter.css
+@@ -1,5 +1,4 @@
+ @import url(pocoo.css);
+-@import url(http://fonts.googleapis.com/css?family=Fira+Mono:400,700|Bitter:400,400italic,700);
+ 
+ /* fonts */
+ body                        { font-family: 'Bitter', serif; font-size: 16px; }
