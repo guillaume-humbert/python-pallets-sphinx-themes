@@ -1,11 +1,11 @@
-python-pallets-sphinx-themes (1.1.0-1) UNRELEASED; urgency=medium
+python-pallets-sphinx-themes (1.1.0-1) unstable; urgency=medium
 
   * New upstream release
   * Convert git repository from git-dpm to gbp layout
   * Bump Standards-Version to 4.2.1
   * d/p/0001-Prevent-privacy-breach.patch: Rewrite for new release
 
- -- Ondřej Nový <onovy@debian.org>  Wed, 08 Aug 2018 09:07:32 +0200
+ -- Ondřej Nový <onovy@debian.org>  Wed, 05 Sep 2018 14:10:47 +0200
 
 python-pallets-sphinx-themes (1.0.1-1) unstable; urgency=medium
 
