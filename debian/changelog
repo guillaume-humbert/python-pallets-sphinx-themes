@@ -1,6 +1,7 @@
 python-pallets-sphinx-themes (1.1.1-1) UNRELEASED; urgency=medium
 
   * New upstream release
+  * Add python3-packaging to B-D
 
  -- Ondřej Nový <onovy@debian.org>  Tue, 18 Sep 2018 12:25:30 +0200
 
