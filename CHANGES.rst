@@ -1,3 +1,26 @@
+Version 1.1.4
+=============
+
+Released 2019-01-28
+
+-   Store a page's canonical URL in
+    ``html_context["page_canonical_url"]`` rather than overwriting
+    ``canonical_url``, for compatibility with Read the Docs. (`#21`_)
+
+.. _#21: https://github.com/pallets/pallets-sphinx-themes/pull/21
+
+
+Version 1.1.3
+=============
+
+Released 2019-01-28
+
+-   Move the Read the Docs search flag to the ``footer`` block to ensure
+    it executes after Read the Docs injects its data. (`#20`_)
+
+.. _#20: https://github.com/pallets/pallets-sphinx-themes/pull/20
+
+
 Version 1.1.2
 =============
 
