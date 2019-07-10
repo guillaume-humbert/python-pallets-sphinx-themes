@@ -1,3 +1,9 @@
+python-pallets-sphinx-themes (1.1.4-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- Ondřej Nový <onovy@debian.org>  Wed, 10 Jul 2019 13:21:01 +0200
+
 python-pallets-sphinx-themes (1.1.2-1) unstable; urgency=medium
 
   * New upstream release
