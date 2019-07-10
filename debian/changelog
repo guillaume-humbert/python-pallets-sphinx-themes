@@ -1,4 +1,4 @@
-python-pallets-sphinx-themes (1.1.4-1) UNRELEASED; urgency=medium
+python-pallets-sphinx-themes (1.1.4-1) unstable; urgency=medium
 
   * New upstream release
   * d/copyright:
@@ -7,7 +7,7 @@ python-pallets-sphinx-themes (1.1.4-1) UNRELEASED; urgency=medium
   * Bump standards version to 4.4.0 (no changes)
   * Bump debhelper compat level to 12 and use debhelper-compat
 
- -- Ondřej Nový <onovy@debian.org>  Wed, 10 Jul 2019 13:21:01 +0200
+ -- Ondřej Nový <onovy@debian.org>  Wed, 10 Jul 2019 13:29:24 +0200
 
 python-pallets-sphinx-themes (1.1.2-1) unstable; urgency=medium
 
