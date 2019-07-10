@@ -1,11 +1,11 @@
 Metadata-Version: 1.1
 Name: Pallets-Sphinx-Themes
-Version: 1.1.2
+Version: 1.1.4
 Summary: Sphinx themes for Pallets and related projects.
 Home-page: https://github.com/pallets/pallets-sphinx-themes/
-Author: The Pallets Team
+Author: Pallets
 Author-email: contact@palletsprojects.com
-License: BSD
+License: BSD-3-Clause
 Description: Pallets Sphinx Themes
         =====================
         
