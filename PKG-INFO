@@ -1,11 +1,14 @@
-Metadata-Version: 1.1
+Metadata-Version: 2.1
 Name: Pallets-Sphinx-Themes
-Version: 1.1.4
+Version: 1.2.2
 Summary: Sphinx themes for Pallets and related projects.
-Home-page: https://github.com/pallets/pallets-sphinx-themes/
+Home-page: https://sphinx-themes.palletsprojects.com/
 Author: Pallets
 Author-email: contact@palletsprojects.com
 License: BSD-3-Clause
+Project-URL: Documentation, https://sphinx-themes.palletsprojects.com/
+Project-URL: Code, https://github.com/pallets/pallets-sphinx-themes
+Project-URL: Issue tracker, https://github.com/pallets/pallets-sphinx-themes/issues
 Description: Pallets Sphinx Themes
         =====================
         
@@ -47,10 +50,11 @@ Classifier: Programming Language :: Python
 Classifier: Programming Language :: Python :: 2
 Classifier: Programming Language :: Python :: 2.7
 Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.4
 Classifier: Programming Language :: Python :: 3.5
 Classifier: Programming Language :: Python :: 3.6
 Classifier: Programming Language :: Python :: 3.7
 Classifier: Topic :: Documentation
 Classifier: Topic :: Documentation :: Sphinx
 Classifier: Topic :: Software Development :: Documentation
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Description-Content-Type: text/x-rst
