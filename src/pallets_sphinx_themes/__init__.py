@@ -5,14 +5,19 @@ import sys
 import textwrap
 from collections import namedtuple
 
-import pkg_resources
+import importlib_metadata
 from sphinx.builders._epub_base import EpubBuilder
-from sphinx.builders.html import SingleFileHTMLBuilder
 from sphinx.errors import ExtensionError
 
 from .theme_check import only_pallets_theme
 from .theme_check import set_is_pallets_theme
 from .versions import load_versions
+
+try:
+    from sphinx.builders.singlehtml import SingleFileHTMLBuilder
+except ImportError:
+    # Sphinx 1 compatibility
+    from sphinx.builders.html import SingleFileHTMLBuilder
 
 
 def setup(app):
@@ -30,8 +35,12 @@ def setup(app):
     app.connect("builder-inited", load_versions)
     app.connect("html-collect-pages", add_404_page)
     app.connect("html-page-context", canonical_url)
-    app.connect("autodoc-skip-member", skip_internal)
-    app.connect("autodoc-process-docstring", cut_module_meta)
+
+    try:
+        app.connect("autodoc-skip-member", skip_internal)
+        app.connect("autodoc-process-docstring", cut_module_meta)
+    except ExtensionError:
+        pass
 
     try:
         app.add_config_value("singlehtml_sidebars", None, "html")
@@ -41,8 +50,10 @@ def setup(app):
         app.connect("builder-inited", singlehtml_sidebars)
 
     from .themes import click as click_ext
+    from .themes import jinja as jinja_ext
 
     click_ext.setup(app)
+    jinja_ext.setup(app)
 
     own_release, _ = get_version(__name__)
     return {"version": own_release, "parallel_read_safe": True}
@@ -132,7 +143,7 @@ def get_version(name, version_length=2, placeholder="x"):
     :return: ``(release, version)`` tuple.
     """
     try:
-        release = pkg_resources.get_distribution(name).version
+        release = importlib_metadata.version(name)
     except ImportError:
         print(
             textwrap.fill(

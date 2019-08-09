@@ -1,2 +1,3 @@
-Sphinx
+importlib-metadata
 packaging
+Sphinx
