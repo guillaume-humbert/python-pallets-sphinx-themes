@@ -1,15 +1,8 @@
-python-pallets-sphinx-themes (1.2.2-2) UNRELEASED; urgency=medium
-
-  * Bump Standards-Version to 4.4.1.
-
- -- Ondřej Nový <onovy@debian.org>  Fri, 18 Oct 2019 15:27:11 +0200
-
-python-pallets-sphinx-themes (1.2.2-1) unstable; urgency=medium
+python-pallets-sphinx-themes (1.2.2-1~ubuntu1) bionic; urgency=medium
 
   * New upstream release.
-  * Rebase patches.
 
- -- Ondřej Nový <onovy@debian.org>  Sat, 10 Aug 2019 10:31:21 +0200
+ -- Guillaume J Humbert <guillaume.j.humbert@pm.me>  Sat, 26 Oct 2019 19:59:48 +0800
 
 python-pallets-sphinx-themes (1.1.4-1) unstable; urgency=medium
 

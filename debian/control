@@ -3,7 +3,7 @@ Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.
 Uploaders: Ondřej Nový <onovy@debian.org>,
 Section: python
 Priority: optional
-Build-Depends: debhelper-compat (= 12),
+Build-Depends: debhelper (>= 10~),
                dh-python,
                python3-all,
                python3-setuptools,
@@ -12,7 +12,7 @@ Build-Depends: debhelper-compat (= 12),
                python3-packaging,
                python3-pygments,
                python3-sphinx,
-Standards-Version: 4.4.1
+Standards-Version: 4.1.4
 Homepage: https://github.com/pallets/pallets-sphinx-themes
 Vcs-Browser: https://salsa.debian.org/python-team/modules/python-pallets-sphinx-themes
 Vcs-Git: https://salsa.debian.org/python-team/modules/python-pallets-sphinx-themes.git
